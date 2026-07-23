@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Service.com</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Business Service.com</a>
+      <button class="nav-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="#account">Account</a>
+        <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#resources">Resources</a>
+        <a href="#chat">Chat</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <h1>Your business services and trusted guidance</h1>
+        <p>Discover service offerings, industry insights, and accessible business resources in one easy-to-navigate website. Create an email account to access the full portal.</p>
+        <a class="btn primary" href="#account">Create Account</a>
+      </div>
+    </section>
+
+    <section class="section auth" id="account">
+      <div class="container">
+        <h2>Create an Account</h2>
+        <p>Register with your email to unlock service details, industry resources, and business support guidance.</p>
+        <form id="accountForm" class="contact-form" novalidate>
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Full Name" minlength="2" required />
+          </label>
+          <label>
+            Business Email
+            <input type="email" name="email" placeholder="you@business.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Create a password" minlength="8" required />
+          </label>
+          <label>
+            Business Type
+            <input type="text" name="businessType" placeholder="What kind of business do you run?" minlength="2" required />
+          </label>
+          <button class="btn secondary" type="submit">Create Account</button>
+          <p id="accountResponse" class="form-response" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <h2>Core Business Services</h2>
+        <p>We organize critical business support into clear categories so anyone can find the right service quickly.</p>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Digital Strategy</h3>
+            <p>Plan effective campaigns, maps, and online presence for small and growing businesses.</p>
+          </article>
+          <article class="card">
+            <h3>Growth Marketing</h3>
+            <p>Access branding, lead generation, and sales funnel support built to convert website visitors into customers.</p>
+          </article>
+          <article class="card">
+            <h3>Operations Consulting</h3>
+            <p>Improve workflows, team coordination, and delivery systems with practical, scalable solutions.</p>
+          </article>
+          <article class="card">
+            <h3>Customer Experience</h3>
+            <p>Create structured service offerings and customer journeys that build loyalty and trust.</p>
+          </article>
+          <article class="card">
+            <h3>Finance & Compliance</h3>
+            <p>Find guidance on budgeting, reporting, and regulations that support business continuity.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="industries">
+      <div class="container about-inner">
+        <div>
+          <h2>Industries We Support</h2>
+          <p>Whether you run a startup, retail brand, agency, or service company, this portal helps you access the right business service information.</p>
+          <ul>
+            <li>Startups and early-stage ventures</li>
+            <li>Retail, e-commerce, and hospitality brands</li>
+            <li>Professional services and consulting practices</li>
+            <li>Nonprofits and community-driven organizations</li>
+          </ul>
+        </div>
+        <div class="feature-box">
+          <h3>Accessible information for every business</h3>
+          <p>Each section is written with plain language so anyone can understand service benefits, next steps, and how to connect.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="resources">
+      <div class="container">
+        <h2>How to Use This Portal</h2>
+        <div class="grid cards">
+          <article class="card">
+            <h3>1. Explore Services</h3>
+            <p>Review each service category to find the best match for your business goals.</p>
+          </article>
+          <article class="card">
+            <h3>2. Choose an Industry</h3>
+            <p>Read the industry-specific guidance to understand how services apply to your field.</p>
+          </article>
+          <article class="card">
+            <h3>3. Contact with Confidence</h3>
+            <p>Use the contact form to ask questions, request quotes, or schedule a service review.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section chat" id="chat">
+      <div class="container">
+        <div class="chat-header">
+          <h2>Community Chat</h2>
+          <p>Type a message below and see it appear instantly in the chat stream. This is a simple browser chat experience for visitors.</p>
+        </div>
+        <div class="chat-panel">
+          <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+          <form id="chatForm" class="chat-form">
+            <label class="sr-only" for="chatInput">Type your message</label>
+            <textarea id="chatInput" name="message" rows="2" placeholder="Write a message to the chat..." required></textarea>
+            <div class="chat-actions">
+              <button class="btn primary" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <h2>Trusted by Business Leaders</h2>
+        <div class="grid testimonials-grid">
+          <blockquote>
+            <p>"This portal made it easy for our team to compare services and choose the right marketing path."</p>
+            <cite>HENRY C PHIRI, Retail Operations</cite>
+          </blockquote>
+          <blockquote>
+            <p>"The clear service descriptions helped us understand exactly what we needed for our launch."</p>
+            <cite>Antonio Perez, Startup Founder</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <h2>Contact for Business Support</h2>
+          <p>Already created an account? Have a question about access, pricing, or implementation? Reach out and we’ll guide you to the right support.</p>
+          <p>Feel free to ask</p>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell us about your business needs" required></textarea>
+          </label>
+          <button class="btn secondary" type="submit">Send Message</button>
+          <p id="formResponse" class="form-response" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Business Service.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
